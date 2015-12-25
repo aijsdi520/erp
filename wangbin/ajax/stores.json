@@ -1,0 +1,22 @@
+{
+    "status": 200,
+    "message": "查询成功",
+    "data": [
+        {
+            "store_id": 1,
+            "store_name": "范德萨"
+        },
+        {
+            "store_id": 2,
+            "store_name": "这是毛"
+        },
+        {
+            "store_id": 3,
+            "store_name": "搜索"
+        },
+        {
+            "store_id": 4,
+            "store_name": "南京东路"
+        }
+    ]
+}

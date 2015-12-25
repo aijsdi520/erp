@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="renderer" content="webkit"/>
+        <title>会员</title>
+        <script src="../static/lib/jquery.js"></script>
+        <link rel="stylesheet" href="../static/lib/normalize.css"/>
+        <link rel="stylesheet" href="../static/css/base.css"/>
+        <script src="../static/modules/base.js"></script>
+        <script src="../static/lib/My97DatePicker/WdatePicker.js"></script>
+        <link rel="stylesheet" href="../static/css/setting.css"/>
+        <script src="../static/modules/member.js"></script>
+    </head>
+    <body>
+        <div class="header-wrap container-wrap">
+            <div class="header container clearfix color-white">
+                <div class="title fl">中田店长管理系统</div>
+                <div class="store fl">长寿路店</div>
+                <a class="exit fr" href="javascript:;">退出</a>
+            </div>
+        </div>
+        <div class="nav-wrap container-wrap">
+            <ul class="nav container clearfix">
+                <li><a class="focus" href="javascript:;">会员</a></li>
+                <li><a href="javascript:;">教练</a></li>
+                <li><a href="javascript:;">消课</a></li>
+                <li><a href="javascript:;">设置</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="setting-box">
+                <div class="title">会员信息</div>
+                <ul class="setting-boxList">
+                    <li>
+                        <label class="type fl">名称</label>
+                        <input class="text fl" type="text"/>
+                        <label class="type fl">性别</label>
+                        <select class="text text-byte fl">
+                            <option>男</option>
+                            <option>女</option>
+                        </select>
+                        <label class="type fl">手机</label>
+                        <input class="text fl" type="text"/>
+                        <div class="fr">
+                            <label class="type fl">门店</label>
+                            <select class="text text-short fl">
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="setting-box">
+                <div class="title title-icon empty">停卡</div>
+                <ul class="setting-boxList">
+                    <li>
+                        <label class="type fl">日期</label>
+                        <input data-action="dateboth" class="text text-date fl" type="text" value="2015-12-21" readonly disabled/>
+                        <div class="dao fl">到</div>
+                        <input data-action="dateboth" class="text text-date fl" type="text" value="2015-12-21" readonly disabled/>
+                    </li>
+                </ul>
+            </div>
+            <div class="setting-box">
+                <div class="title">购课历史</div>
+                <ul class="setting-boxList">
+                    <li>
+                        <label class="type fl">购买时间</label>
+                        <div class="fl">2015年12月21日</div>
+                    </li>
+                    <li>
+                        <label class="type fl">课种</label>
+                        <div class="fl">按月</div>
+                    </li>
+                    <li>
+                        <input type="hidden" name="info_id" value="1"/>
+                        <input type="hidden" name="type" value="1"/>
+                        <label class="type fl">有效期</label>
+                        <input data-action="dateboth" class="text text-date fl" type="text" value="2015-12-21" readonly disabled/>
+                        <div class="dao fl">到</div>
+                        <input data-action="dateboth" class="text text-date fl" type="text" value="2015-12-21" readonly disabled/>
+                        <div class="fl update">
+                            <a class="color-blue xiugai" href="javascript:;">修改</a>
+                            <a class="color-blue queding" href="javascript:;">确定</a>
+                            <a class="color-blue quxiao" href="javascript:;">取消</a>
+                        </div>
+                        <div class="fr">
+                            <label class="type fl">售课私教</label>
+                            <select class="text text-short fl">
+                                <option>王天荣</option>
+                                <option>王天荣</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <label class="type fl">购买时间</label>
+                        <div class="fl">2015年12月21日</div>
+                    </li>
+                    <li>
+                        <label class="type fl">课种</label>
+                        <div class="fl">按次</div>
+                        <div class="yue">
+                            <label>剩余课时</label>
+                            <input class="text text-byte" type="text" name="num" disabled/>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="hidden" name="info_id" value="2"/>
+                        <input type="hidden" name="type" value="0"/>
+                        <label class="type fl">有效期</label>
+                        <input data-action="dateboth" class="text text-date fl" type="text" value="2015-12-21" readonly disabled/>
+                        <div class="dao fl">到</div>
+                        <input data-action="dateboth" class="text text-date fl" type="text" value="2015-12-21" readonly disabled/>
+                        <div class="fl update">
+                            <a class="color-blue xiugai" href="javascript:;">修改</a>
+                            <a class="color-blue queding" href="javascript:;">确定</a>
+                            <a class="color-blue quxiao" href="javascript:;">取消</a>
+                        </div>
+                        <div class="fr">
+                            <label class="type fl">售课私教</label>
+                            <select class="text text-short fl">
+                                <option>王天荣</option>
+                                <option>王天荣</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="setting-box">
+                <div class="title">备注</div>
+                <ul class="setting-boxList">
+                    <li>
+                        <textarea class="descr"></textarea>
+                    </li>
+                </ul>
+            </div>
+            <div class="setting-btn">
+                <a class="btn btn-cancel" href="javascript:;">取消</a>
+                <a class="btn btn-ok" href="javascript:;">提交</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <title>设置</title>
+    <script src="../static/lib/jquery.js"></script>
+    <link rel="stylesheet" href="../static/lib/normalize.css"/>
+    <link rel="stylesheet" href="../static/css/base.css"/>
+    <script src="../static/modules/base.js"></script>
+    <script src="../static/lib/pinyin.js"></script>
+    <link rel="stylesheet" href="../static/css/select.css"/>
+    <script src="../static/modules/select.js"></script>
+    <style>
+        .conter{
+            width:980px;
+            margin: 0px auto;
+            text-align: center;
+        }
+        form{
+            width:70%;
+            margin: 0px auto;
+            text-align: center;
+        }
+        form div{margin: 20px 0; font-size:1.6rem}
+        form input{ width: 340px;
+            height: 50px;}
+        .slety{width: 340px;
+            height: 50px;}
+        .slety3{    width: 90px;
+            height: 50px;
+            margin: 0 20px 0 0;}
+        select,option,input{
+            padding: 0px 0px 0 20px;}
+        .ntpd{width:180px;}
+        h1{margin: 50px 0; font-weight: normal;}
+        .bottm{    margin: 62px auto;
+            width: 400px;
+            text-align: right; }
+        .bottm input{
+            width: 156px;
+            margin: 0px 10px;
+            border: 0 solid white;
+        }
+        .bottm input:nth-child(2){
+            background: rgb(255,232,38);
+        }
+        .bottm > input{
+            padding: 0;}
+        .bottm input:hover{ background-color:#ffc047; border:1px solid #ffc047;  }
+
+    </style>
+</head>
+<body>
+<div class="header-wrap container-wrap">
+    <div class="header container clearfix color-white">
+        <div class="title fl">中田店长管理系统</div>
+        <div class="store fl"></div>
+        <a class="exit fr" href="javascript:;">退出</a>
+    </div>
+</div>
+<div class="nav-wrap container-wrap">
+    <ul class="nav container clearfix">
+        <li><a href="javascript:;">会员</a></li>
+        <li><a class="focus"  href="javascript:;">教练</a></li>
+        <li><a href="javascript:;">消课</a></li>
+        <li><a href="javascript:;">设置</a></li>
+    </ul>
+</div>
+<div class="conter">
+    <div>
+        <h1>添加教练</h1>
+
+        <form action="">
+            <div>姓名 <input type="text" /></div>
+            <div>门店 <div id="addinst_select" class="slety ui-select"></div><input type="hidden" name="idstore"/></div>
+            <div>性别 <select class="slety3"><option>男</option><option>女</option></select> 手机 <input class="ntpd" type="text" ></div>
+            <div class="bottm"> <input type="button" value="取消"/> <input type="button" value="提交"/></div>
+        </form>
+
+    </div>
+</div>
+    <ul id="pstores" class="pstores">
+        <li>
+            <div class="title">A-F</div>
+        </li>
+        <li>
+            <div class="title">G-K</div>
+        </li>
+        <li>
+            <div class="title">L-P</div>
+        </li>
+        <li>
+            <div class="title">Q-U</div>
+        </li>
+        <li>
+            <div class="title">V-Z</div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="renderer" content="webkit"/>
+        <title>会员</title>
+        <script src="../static/lib/jquery.js"></script>
+        <link rel="stylesheet" href="../static/lib/normalize.css"/>
+        <link rel="stylesheet" href="../static/css/base.css"/>
+        <script src="../static/modules/base.js"></script>
+        <script src="../static/lib/pinyin.js"></script>
+        <link rel="stylesheet" href="../static/css/setting.css"/>
+        <script src="../static/modules/member.js"></script>
+    </head>
+    <body>
+        <div class="header-wrap container-wrap">
+            <div class="header container clearfix color-white">
+                <div class="title fl">中田店长管理系统</div>
+                <div class="store fl">长寿路店</div>
+                <a class="exit fr" href="javascript:;">退出</a>
+            </div>
+        </div>
+        <div class="nav-wrap container-wrap">
+            <ul class="nav container clearfix">
+                <li><a class="focus" href="javascript:;">会员</a></li>
+                <li><a href="javascript:;">教练</a></li>
+                <li><a href="javascript:;">消课</a></li>
+                <li><a href="javascript:;">设置</a></li>
+            </ul>
+        </div>
+        <div class="container-wrap">
+            <div class="container">
+                <div class="setting-search">
+                    <form>
+                        <input type="hidden" name="idstore"/>
+                        <div id="setting_select" class="select">全部门店全部门店全部门店</div>
+                        <input class="text" type="text"/>
+                        <input class="btn" type="submit" value="搜索"/>
+                    </form>
+                </div>
+            </div>
+            <div class="setting-bar">
+                <a class="btn" href="javascript:;">添加会员</a>
+                <a class="btn" href="javascript:;">统计</a>
+            </div>
+            <table class="setting-table">
+                <thead>
+                    <tr>
+                        <th width="7.5%" rowspan="2">姓名</th>
+                        <th width="7.5%" rowspan="2">门店</th>
+                        <th width="5%" rowspan="2">性别</th>
+                        <th width="7.5%" rowspan="2">手机</th>
+                        <th width="7.5%" rowspan="2">卡种</th>
+                        <th class="colspan" colspan="3">当前卡</th>
+                        <th width="7.5%" rowspan="2">剩余卡数量</th>
+                        <th width="15%" rowspan="2">停卡期</th>
+                        <th width="12.5%" rowspan="2">操作</th>
+                    </tr>
+                    <tr>
+                        <th width="10%">起始日期</th>
+                        <th width="10%">终止日期</th>
+                        <th width="10%">剩余课时</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-user_id="1">
+                        <td>
+                            <input type="hidden" value="此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计此处为备注信息，忽略不计"/>
+                            <div class="tip"></div>
+                            <div class="name">金玲</div>
+                        </td>
+                        <td>长寿路店</td>
+                        <td>女</td>
+                        <td>13532523532</td>
+                        <td>次卡</td>
+                        <td>2016/05/03</td>
+                        <td>2017/05/03</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>2016/05/03-2016/08/03</td>
+                        <td>
+                            <a class="color-blue" href="javascript:;">买课</a>
+                            <a class="color-blue" href="javascript:;">编辑</a>
+                            <a class="huanmendian color-blue" href="javascript:;">转出门店</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="hidden" value="此处为备注信息，忽略不计"/>
+                            <div class="tip"></div>
+                            <div class="name">金玲</div>
+                        </td>
+                        <td>长寿路店</td>
+                        <td>女</td>
+                        <td>13532523532</td>
+                        <td>次卡</td>
+                        <td>2016/05/03</td>
+                        <td>2017/05/03</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>2016/05/03-2016/08/03</td>
+                        <td>
+                            <a class="color-blue" href="javascript:;">买课</a>
+                            <a class="color-blue" href="javascript:;">编辑</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tipbox" class="tipbox"></div>
+        <ul id="pstores" class="pstores">
+            <li>
+                <div class="title">A-F</div>
+                <div class="item" data-store_id="0">全部门店</div>
+            </li>
+            <li>
+                <div class="title">G-K</div>
+            </li>
+            <li>
+                <div class="title">L-P</div>
+            </li>
+            <li>
+                <div class="title">Q-U</div>
+            </li>
+            <li>
+                <div class="title">V-Z</div>
+            </li>
+        </ul>
+        <div id="pmendian-bg" class="pmendian-bg"></div>
+        <div id="pmendian" class="pmendian">
+            <div class="setting-title">转出门店</div>
+            <ul class="setting-form">
+                <li>
+                    <label class="type">姓名</label>
+                    <div class="fl name"></div>
+                </li>
+                <li>
+                    <label class="type">转出门店</label>
+                    <div class="fl store_name"></div>
+                </li>
+                <li>
+                    <label class="type">转入门店</label>
+                    <select class="store_list text"></select>
+                </li>
+            </ul>
+            <div class="setting-btn">
+                <a class="btn btn-cancel" href="javascript:;">取消</a>
+                <a class="btn btn-ok" href="javascript:;">提交</a>
+            </div>
+        </div>
+    </body>
+</html>

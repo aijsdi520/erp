@@ -1,0 +1,94 @@
+html{font-size:62.5%;}
+.mouthangy{
+    height: 100px;
+
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 100px;
+
+    text-align: center;
+
+}
+.relvat{
+    width:980px;
+    margin: 0 auto;
+    position: relative;
+}
+.leftmouth,.mouthright{
+    position: absolute;
+    width:13px;
+
+    height: 13px;
+
+    border-top: 2px solid rgb(54,153,253);
+    border-left: 2px solid rgb(54,153,253);
+    display: block;
+    top:50%;
+    margin-top: -7px;
+
+
+}
+.leftmouth {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+
+    left: 390px;
+
+
+}
+.mouthright {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+
+    left: 575px;
+
+
+
+}
+
+table
+{
+
+    border-collapse: collapse;
+    border:none;
+    width:100%;
+    cursor:default;
+
+}
+td,th
+{
+    height:50px;
+    text-align:center;
+    font-size:18px;
+
+
+}
+.heitssdf{height:30px;}
+
+tr:first-child:hover
+{
+    background-color:#ffe826;
+}
+tr:hover
+{
+    background-color: rgb(219,234,249);
+    cursor:pointer;
+}
+tr td:nth-child(9)
+{
+    width: 200px;
+}
+tr:nth-child(odd)
+{
+    background: #ccc;
+
+}
+tr:first-child{ background-color:#ffe826; }
+em{font-style:normal;}
+

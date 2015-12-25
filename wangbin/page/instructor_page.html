@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <title>设置</title>
+    <script src="../static/lib/jquery.js"></script>
+    <link rel="stylesheet" href="../static/lib/normalize.css"/>
+    <link rel="stylesheet" href="../static/css/base.css"/>
+    <script src="../static/modules/base.js"></script>
+    <link rel="stylesheet" href="../static/css/fireclass.css"/>
+    <script src="../static/lib/pinyin.js"></script>
+    <link rel="stylesheet" href="../static/css/select.css"/>
+    <script src="../static/modules/select.js"></script>
+
+    <style>
+        #naid_id{ width: 100%;display: block;
+            height: 100%;}
+        .tippdstg{margin: 50px auto 70px;width: 800px;}
+        .tippdstg .inptutxtd{margin: 0px 32px;border: 1px solid rgb(255,225,170);height: 40px;}
+        .tippdstg .tdfd{width:100%; height:38px; border:0px solid #ffe826; font-size:20px; padding:0px 0 0 5px;}
+        .tippdstg .tbtuuseack{ width:100%; height:38px; border:1px solid #ffe826; background-color: #ffe826;  font-size:18px;}
+        .inptutxtd ul .dicoltj ul,.inptutxtd ul{ list-style:none; width:100%; padding:0px ; margin:0px;}
+        .inptutxtd ul li{  width:110px; float:left; line-height: 33px;}
+        .inptutxtd ul .dicoltj ul li, .inptutxtd ul .dicoltj{ background-color:rgb(241,241,241);width:160px; height:38px; text-align:center;  line-height:39px;}
+        .inptutxtd ul .dicoltj{ position:relative;}
+        .inptutxtd ul .dicoltj em{width:5px ; height:5px; border:9px solid transparent; border-top:9px solid rgb(158,158,158);position: absolute;bottom: 4px;right: 5px;}
+        .inptutxtd ul .dicoltj ul li{background-color: White;}
+        .inptutxtd ul .iundseztgt{     width: 464px;}
+        .inptutxtd ul li .wocainjifd li{ border-left:1px solid rgb(241,241,241); border-right:1px solid rgb(241,241,241);border-bottom:1px solid rgb(241,241,241);}
+
+        .inptutxtd ul li .wocainjifd li:hover{ background-color:#ffe826; cursor:pointer; }
+        #etdsfd{display: none;}
+
+        .texytpg{
+            margin: 10px 50px;
+        }
+        .texytpg input{
+           width:100px;
+            height: 35px;
+            font-size: 1.8rem;
+            margin: 0 15px;
+        }
+     table   a{
+            color: dodgerblue; font-size:1.7rem}
+        table a:hover{
+            color: blue;}
+        select{
+            background: rgba(0,0,0,0);
+            border:0px solid;
+            outline: none;
+            padding: 0 0 0 10px;
+            width: calc(100%);
+        }
+        select > option{
+            text-align: center;
+            padding: 0 0 0 10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="header-wrap container-wrap">
+    <div class="header container clearfix color-white">
+        <div class="title fl">中田店长管理系统</div>
+        <div class="store fl"></div>
+        <a class="exit fr" href="javascript:;">退出</a>
+    </div>
+</div>
+<div class="nav-wrap container-wrap">
+    <ul class="nav container clearfix">
+        <li><a href="javascript:;">会员</a></li>
+        <li><a class="focus"  href="javascript:;">教练</a></li>
+        <li><a href="javascript:;">消课</a></li>
+        <li><a href="javascript:;">设置</a></li>
+    </ul>
+</div>
+<div class="mouthangy">
+
+    <div class="bottm">
+        <div class="tippdstg" >
+
+            <div class="inptutxtd">
+                <ul >
+                    <li class="dicoltj">
+                        <input type="hidden" name="idstore" value="0"/>
+                        <div id="page_select" class="ui-select">全部门店</div>
+                    </li>
+                    <li class="iundseztgt"> <input  class="tdfd" type="text"/>  </li>
+                    <li><input class="tbtuuseack" type="button" value="搜索" /> </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="texytpg">
+   <a href="javascript:;"> <input type="button" value="添加教练"/></a>
+    <input type="button" value="统计"/>
+</div>
+
+<div>
+    <table>
+
+        <tr id="1">
+            <td>姓名</td>
+            <td>门店人</td>
+            <td>性别</td>
+            <td>手机</td>
+            <td>操作</td>
+
+        </tr>
+        <tr >
+
+            <td>金玲</td>
+            <td>上海长寿路店</td>
+            <td>女</td>
+            <td>18585868985</td>
+            <td>
+                <a href="javascript:;">修改</a>
+                <a href="javascript:;">停用</a>
+            </td>
+
+
+        </tr>
+        <tr id="2">
+
+            <td>金玲</td>
+            <td>上海长寿路店</td>
+            <td>女</td>
+            <td>18585868985</td>
+            <td>
+                <a href="javascript:;">修改</a>
+                <a href="javascript:;">停用</a>
+            </td>
+
+
+        </tr>
+
+
+
+    </table>
+
+</div>
+
+    <ul id="pstores" class="pstores">
+        <li>
+            <div class="title">A-F</div>
+            <div class="item" data-store_id="0">全部门店</div>
+        </li>
+        <li>
+            <div class="title">G-K</div>
+        </li>
+        <li>
+            <div class="title">L-P</div>
+        </li>
+        <li>
+            <div class="title">Q-U</div>
+        </li>
+        <li>
+            <div class="title">V-Z</div>
+        </li>
+    </ul>
+</body>
+</html>
+<script>
+
+
+    $("#naid_id,.djietdlios").click(function () {
+        $(".wocainjifd").fadeToggle(100);
+
+
+    });
+    $("#etdsfd li").click(function () {
+        var txval = $(this).html();
+        $("#naid_id").html(txval);
+        $(".wocainjifd").fadeToggle(100);
+    });
+
+
+</script>

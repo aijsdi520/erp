@@ -1,0 +1,75 @@
+/****** reset{ ******/
+/*body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,hr,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}*/
+/*button,input,select,textarea,h1,h2,h3,h4,h5,h6{font-size:100%;}*/
+/*body,button,input,select,textarea{line-height:1.5;}*/
+/*table{border-collapse:collapse;border-spacing:0;}*/
+/*b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal;}*/
+/*em,i{font-style:normal;}*/
+/*a{text-decoration:none;}*/
+/*iframe,img{border:0;}*/
+/*ol,ul{list-style:none;}*/
+/*a,button,input,select,textarea{outline:0;}*/
+/*a,button,input[type=button],input[type=submit],input[type=reset]{cursor:pointer;}*/
+/*textarea{overflow:auto;resize:vertical;cursor:text;}*/
+/*body{position:relative;background-color:#fff;}*/
+/*button,input[type=button],input[type=submit],input[type=reset]{-webkit-appearance:none;}*/
+/*input::-ms-clear,input::-ms-reveal{display:none;}*/
+/**,:after,:before{-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}*/
+/****** reset} ******/
+
+/****** 通用类{ ******/
+/* 自适应布局 */
+.adapt:after{clear:both;content:'';display:block;visibility:hidden;height:0;}
+.adapt-main{float:left;width:100%;}
+.adapt-lbar{float:left;position:relative;margin-right:-100%;}
+.adapt-rbar{float:right;position:relative;margin-left:-100%;}
+/* 浮动 */
+.fl{float:left;_display:inline;}
+.fr{float:right;_display:inline;}
+/* 清除浮动 */
+.clearfix{*zoom:1;}
+.clearfix:after{clear:both;content:'';display:block;visibility:hidden;height:0;}
+/* 行内块元素 */
+.inblock{display:inline-block;*zoom:1;*display:inline;vertical-align:middle;}
+/* 省略号（单行） */
+.ellipsis-single{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/* 省略号（多行） */
+.ellipsis-more{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;/*height:3em;-webkit-line-clamp:2;*/}
+/****** 通用类} ******/
+
+/****** 主题类{ ******/
+*,:after,:before{-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+a{color:inherit;text-decoration:none;}
+input{outline:0;}
+::-webkit-input-placeholder{color:#ccc;}
+::-moz-placeholder{color:#ccc;opacity:1;}
+html{font-family:arial,'microsoft yahei',sans-serif;font-size:12px;color:#333;}
+.container-wrap{min-width:980px;}
+.container{width:980px;margin:0 auto;}
+/****** 主题类} ******/
+
+/****** 文字{ ******/
+.color-white{color:#fff;}
+.color-gray{color:#afafaf;}
+.color-red{color:#fe0101;}
+/****** 文字} ******/
+
+/****** 自定义ui{ ******/
+.ui-btn{display:block;width:100%;cursor:pointer;height:30px;line-height:30px;text-align:center;border:0;border-radius:4px;background-color:transparent;}
+.ui-btn-red{color:#fff;background-color:#F34F50;}
+.ui-text{padding:1px 10px;*padding:0 10px;border:1px solid #e3e3e3;}
+.ui-text input{display:block;width:100%;padding:6px 0;height:14px;line-height:14px;border:0;background-color:transparent;}
+.ui-text textarea{display:block;width:100%;padding:6px 0;height:42px;line-height:14px;border:0;background-color:transparent;}
+/****** 自定义ui} ******/
+
+.header-wrap{background-color:#2d3442;}
+.header{padding:19px 0;line-height:22px;}
+.header .title-center{font-size:18px;text-align:center;}
+.header .title{font-size:18px;margin:0 0 0 60px;}
+.header .store{font-size:14px;margin:0 0 0 10px;}
+.header .exit{font-size:18px;padding:0 0 0 26px;background:url(../img/base/icon_exit.png) no-repeat;}
+.nav-wrap{background-color:#f5f5f5;box-shadow:0 1px 6px #ccc;}
+.nav{list-style:none;padding:0;text-align:center;font-size:18px;}
+.nav li{float:left;width:25%;}
+.nav a{display:block;height:60px;line-height:60px;}
+.nav a.focus{border-bottom:4px solid #434c5d;}

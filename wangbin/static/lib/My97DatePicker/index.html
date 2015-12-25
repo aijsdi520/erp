@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+        <script src="WdatePicker.js"></script>
+    </head>
+    <body>
+        <div><a href="http://www.my97.net/dp/demo/index.htm" target="_blank">使用说明</a></div>
+        <input class="Wdate" type="text" readonly/>
+        <script>
+            $(function () {
+                $('.Wdate').click(function () {
+                    WdatePicker({dateFmt: 'yyyy-MM-dd HH:mm:00'});
+                });
+            });
+        </script>
+    </body>
+</html>

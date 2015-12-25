@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <title>门店管理</title>
+    <script src="../static/lib/jquery.js"></script>
+    <link rel="stylesheet" href="../static/lib/normalize.css"/>
+    <link rel="stylesheet" href="../static/css/base.css"/>
+    <script src="../static/modules/base.js"></script>
+    <link rel="stylesheet" href="../static/css/fireclass.css"/>
+    <style>
+        .xiugpf{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+            background: rgba(0,0,0,.5);
+            z-index: 1;
+            display: none;
+        }
+        .pkktd{
+            font-size: 2rem;
+            position: absolute;
+            width: 500px;
+            height: 200px;
+            background: white;
+            top:50%;
+            margin-top: -100px;
+            z-index: 2;
+            text-align: center;
+            left: 35%;
+            display: none;
+        }
+        .shuajjf{
+            position: absolute;
+            right: -50px;
+            display: block;
+            padding: 1px 10px;
+            background: rgb(54,153,253);
+            height: 50px;
+            line-height: 45px;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 1px 2px 5px rgb(54,153,253);
+            color: wheat;
+        top:0px;}
+        .shuajjf:active{
+            background: rgb(54,153,143);
+            box-shadow: 1px 2px 5px rgb(54,153,143);
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-wrap container-wrap">
+    <div class="header container clearfix color-white">
+        <div class="title fl">中田店长管理系统</div>
+        <div class="store fl"></div>
+        <a class="exit fr" href="javascript:;">退出</a>
+    </div>
+</div>
+<div class="nav-wrap container-wrap">
+    <ul class="nav container clearfix">
+        <li><a href="javascript:;">会员</a></li>
+        <li><a class="focus"  href="javascript:;">教练</a></li>
+        <li><a href="javascript:;">消课</a></li>
+        <li><a href="javascript:;">设置</a></li>
+    </ul>
+</div>
+<div class="mouthangy">
+    <div class="relvat">
+        <a id="preday" class="leftmouth " href="javascript:;"></a>
+        <a id="datea">2015年11月20日</a>
+        <a id="nextday" class="mouthright " href="javascript:;"></a>
+        <a class="shuajjf" href="javascript:;">刷新</a>
+    </div>
+
+</div>
+
+<div>
+    <table>
+
+        <tr id="1">
+            <td>消课时间</td>
+            <td>消课人</td>
+            <td>手机</td>
+            <td>消课类型</td>
+            <td>当前卡剩余课时</td>
+            <td>当前卡到期时间</td>
+            <td>本次上课教练</td>
+            <td>操作</td>
+            <td>备注</td>
+        </tr>
+        <tr id="2">
+            <td>12:21</td>
+            <td>金玲</td>
+            <td>18585868985</td>
+            <td>月卡</td>
+            <td></td>
+            <td>2015/12/21</td>
+            <td>王天榕</td>
+            <td><em class="enterbut">修改</em></td>
+            <td>备注</td>
+
+        </tr>
+        <tr id="3">
+            <td>12:21</td>
+            <td>管新浩</td>
+            <td>18585868985</td>
+            <td>次卡</td>
+            <td>21</td>
+            <td>2015/12/21</td>
+            <td>王天榕</td>
+            <td><em class="enterbut">提交</em></td>
+            <td>备注</td>
+
+        </tr>
+        <tr id="5">
+            <td>12:21</td>
+            <td>金玲</td>
+            <td>18585868985</td>
+            <td>月卡</td>
+            <td></td>
+            <td>2015/12/21</td>
+            <td><select  ><option >王天榕</option><option >王天榕1
+            </option></select></td>
+            <td><em class="enterbut" id="55">提交</em></td>
+            <td>备注</td>
+
+        </trid>
+        <tr id="4">
+            <td>12:21</td>
+            <td>管新浩</td>
+            <td>18585868985</td>
+            <td>次卡</td>
+            <td>21</td>
+            <td>2015/12/21</td>
+            <td>王天榕</td>
+            <td><em class="enterbut">提交</em></td>
+            <td>备注</td>
+
+        </tr>
+
+    </table>
+</div>
+<div class="xiugpf"></div>
+<div class="pkktd">
+    <div>姓名：<span id="dlanaem"></span></div>
+    <div>
+
+        <select id="tdsekect" ></select>
+    </div>
+    <div>
+        <button id="buttomd">提交</button>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    $(function(){
+        var t=0;
+        var dtat;
+        var emarry = $("#datea");
+        var ddate =request("ddate").split("-");
+        emarry.html(GetDateStr(t,ddate));
+        var d= window.location.href.split("?");
+
+        $("#preday").click(function(){
+
+            t--;
+            emarry.html(GetDateStr(t,ddate));
+            window.location.href =d[0]+"?ddate="+dtat.date;
+
+
+        });
+
+        $("#nextday").click(function(){
+
+            t++;
+            emarry.html(GetDateStr(t,ddate));
+            window.location.href =d[0]+"?ddate="+dtat.date;
+        });
+
+  /*      $("select").on("change",function(){
+            alert($(this).children("option:selected").index());
+
+
+        });*/
+        var id;
+        var pchiclig;
+        $(".enterbut").click(function() {
+           /* if (confirm("确定提交吗？")) {
+                var record_id = $(this).parent().parent().attr("id"),
+                        coach_id = $(this).parent().prev().find("select").children("option:selected").attr("id");
+                var data = {"record_id": record_id, "coach_id": coach_id};
+                sendData("http://139.196.57.98:6666/client/set_coach", data);
+            }*/
+            $(".xiugpf").show();
+            $(".pkktd").show();
+            pchiclig =$(this).prev();
+            id=$(this).attr("id");
+
+            var pname= $(this).parent().parent().find("td").eq(1).html();
+            $("#dlanaem").html(pname);
+            var   pd={"record_id":id};
+
+            var p = sendDatat("http://139.196.57.98:6666/client/get_record_id",pd)
+            if (p !="undefined")
+            {
+                var str="";
+               for (var i in p)
+               {
+                    str +="<option id="+p[i].coach_id+">"+p[i].coach_name+"</option>";
+               }
+                $("#tdsekect").append(str);
+            }
+
+        });
+        $(".xiugpf").click(function(){
+            $(".xiugpf").hide();
+            $(".pkktd").hide();
+
+        });
+        $("#buttomd").click(function(){
+
+          var pid=  $("#tdsekect").children("option:selected").attr("id");
+
+            var sl={record_id:id,coach_id:pid}
+           if (sendDataet("http://139.196.57.98:6666/client/alter_coach",sl))
+           {
+               var name =$("#tdsekect").children("option:selected").html();
+               pchiclig.html(name);
+               $(".xiugpf").hide();
+               $(".pkktd").hide();
+           }
+
+
+        });
+        function sendDatat(url,data) {
+            $.ajax({
+                type: "post",
+                url: url,
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                    if (data.status == 200 )
+                    {
+                        var p=JSON.parse(data.data);
+                        return p;
+                    }
+
+                }
+            });
+        }
+        function sendDataet(url,data) {
+            $.ajax({
+                type: "post",
+                url: url,
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                    if (data.status == 200 )
+                    {
+                        return true;
+                    }
+
+                }
+            });
+        }
+        function GetDateStr(AddDayCount,datet) {
+            var dd = new Date(ddate[0],parseInt(ddate[1])-1,ddate[2]);
+            dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
+            var y = dd.getFullYear();
+            var m = dd.getMonth()+1;//获取当前月份的日期
+            var d = dd.getDate();
+            dtat={date:y+"-"+m+"-"+d};
+            return y+"年"+m+"月"+d+"日";
+        };
+        function request(paras) {
+            var url = location.href;
+            var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+            var paraObj = {}
+            for (i = 0; j = paraString[i]; i++) {
+                paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=") + 1, j.length);
+            }
+            var returnValue = paraObj[paras.toLowerCase()];
+            if (typeof (returnValue) == "undefined") {
+                return "";
+            } else {
+                return returnValue;
+            }
+        }
+
+        function sendData(url,data) {
+            $.ajax({
+                type: "post",
+                url: url,
+                data: data,
+                dataType: "json",
+                success: function (data) {
+                if (data.status == 100 )
+                {
+                    window.location.href =d[0]+"?ddate="+dtat.date;
+
+                }
+
+                }
+            });
+        }
+
+        $(".shuajjf").click(function(){
+
+            window.location.href= window.location.href;
+
+        });
+
+    });
+
+
+</script>

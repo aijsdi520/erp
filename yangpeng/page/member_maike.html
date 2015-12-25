@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="renderer" content="webkit"/>
+        <title>会员</title>
+        <script src="../static/lib/jquery.js"></script>
+        <link rel="stylesheet" href="../static/lib/normalize.css"/>
+        <link rel="stylesheet" href="../static/css/base.css"/>
+        <script src="../static/modules/base.js"></script>
+        <script src="../static/lib/My97DatePicker/WdatePicker.js"></script>
+        <link rel="stylesheet" href="../static/css/setting.css"/>
+        <script src="../static/modules/member.js"></script>
+    </head>
+    <body>
+        <div class="header-wrap container-wrap">
+            <div class="header container clearfix color-white">
+                <div class="title fl">中田店长管理系统</div>
+                <div class="store fl">长寿路店</div>
+                <a class="exit fr" href="javascript:;">退出</a>
+            </div>
+        </div>
+        <div class="nav-wrap container-wrap">
+            <ul class="nav container clearfix">
+                <li><a class="focus" href="javascript:;">会员</a></li>
+                <li><a href="javascript:;">教练</a></li>
+                <li><a href="javascript:;">消课</a></li>
+                <li><a href="javascript:;">设置</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <input type="hidden" name="store_id" value="1"/>
+            <div class="setting-title">买课</div>
+            <ul class="setting-form setting-form-maike">
+                <li>
+                    <label class="type">课种</label>
+                    <div class="radio">
+                        <input id="radio-kezhong1" type="radio" name="type" value="1" checked/>
+                        <label for="radio-kezhong1">按月</label>
+                    </div>
+                    <div class="radio">
+                        <input id="radio-kezhong2" type="radio" name="type" value="0"/>
+                        <label for="radio-kezhong2">按次</label>
+                    </div>
+                </li>
+                <!-- 按月 -->
+                <li class="type1">
+                    <label class="type">课程期</label>
+                    <input id="type1_count" class="text text-calc" type="text" value="1"/>
+                    <div class="calc-wrap">
+                        <div class="calc plus">+</div>
+                        <div class="calc minus">-</div>
+                    </div>
+                    <div class="unit">月</div>
+                </li>
+                <li class="type1">
+                    <label class="type">有效期</label>
+                    <input id="date1" class="text text-date" type="text" readonly onclick="WdatePicker({dateFmt: 'yyyy-MM-dd',firstDayOfWeek: 1,maxDate: '#F{$dp.$D(\'date2\')}'});"/>
+                    <div class="dao">到</div>
+                    <input id="date2" class="text text-date" type="text" readonly onclick="WdatePicker({dateFmt: 'yyyy-MM-dd',firstDayOfWeek: 1,minDate: '#F{$dp.$D(\'date1\')}'});"/>
+                </li>
+                <!-- 按次 -->
+                <li class="type0" style="display:none;">
+                    <label class="type">课程数量</label>
+                    <input class="text text-calc" type="text" value="1"/>
+                    <div class="calc-wrap">
+                        <div class="calc plus">+</div>
+                        <div class="calc minus">-</div>
+                    </div>
+                    <div class="unit">节</div>
+                </li>
+                <li class="type0" style="display:none;">
+                    <label class="type">有效期</label>
+                    <input id="date3" class="text text-date" type="text" readonly onclick="WdatePicker({dateFmt: 'yyyy-MM-dd',firstDayOfWeek: 1,maxDate: '#F{$dp.$D(\'date4\')}'});"/>
+                    <div class="dao">到</div>
+                    <input id="date4" class="text text-date" type="text" readonly onclick="WdatePicker({dateFmt: 'yyyy-MM-dd',firstDayOfWeek: 1,minDate: '#F{$dp.$D(\'date3\')}'});"/>
+                </li>
+                <li>
+                    <input type="hidden" name="coach_id"/>
+                    <label class="type">售课私教</label>
+                    <input id="search-text" class="text text-search" type="text"/>
+                    <div id="search-btn" class="search-btn"></div>
+                    <ul id="search-list" class="search-list"></ul>
+                </li>
+            </ul>
+            <div class="setting-btn">
+                <a class="btn btn-cancel" href="javascript:;">取消</a>
+                <a class="btn btn-ok" href="javascript:;">提交</a>
+            </div>
+        </div>
+    </body>
+</html>

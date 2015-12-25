@@ -1,0 +1,9 @@
+﻿.body-login{background-color:#434c5d;}
+.login-form{width:340px;margin:0 auto;padding:80px 0 0 0;}
+.login-form .item{position:relative;margin:40px 0 0 0;}
+.login-form .item-btn{margin:60px 0 0 0;}
+.login-form .text{width:100%;height:60px;line-height:60px;padding:0 30px 0 55px;font-size:18px;border:0;border-radius:1000px;background:no-repeat #fff 20px 20px;}
+.login-form .text.username{background-image:url(../img/login/icon_username.png);}
+.login-form .text.password{background-image:url(../img/login/icon_password.png);}
+.login-form .btn{width:100%;height:60px;background-color:#ffe826;font-size:24px;border:0;border-radius:6px;}
+.login-form .error{position:absolute;width:100%;left:0;top:78px;text-align:center;font-size:18px;}

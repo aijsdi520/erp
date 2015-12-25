@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="renderer" content="webkit"/>
+        <title>会员</title>
+        <script src="../static/lib/jquery.js"></script>
+        <link rel="stylesheet" href="../static/lib/normalize.css"/>
+        <link rel="stylesheet" href="../static/css/base.css"/>
+        <script src="../static/modules/base.js"></script>
+        <script src="../static/lib/pinyin.js"></script>
+        <link rel="stylesheet" href="../static/css/setting.css"/>
+        <script src="../static/modules/member.js"></script>
+    </head>
+    <body>
+        <div class="header-wrap container-wrap">
+            <div class="header container clearfix color-white">
+                <div class="title fl">中田店长管理系统</div>
+                <div class="store fl">长寿路店</div>
+                <a class="exit fr" href="javascript:;">退出</a>
+            </div>
+        </div>
+        <div class="nav-wrap container-wrap">
+            <ul class="nav container clearfix">
+                <li><a class="focus" href="javascript:;">会员</a></li>
+                <li><a href="javascript:;">教练</a></li>
+                <li><a href="javascript:;">消课</a></li>
+                <li><a href="javascript:;">设置</a></li>
+            </ul>
+        </div>
+        <div class="container-wrap">
+            <div class="setting-date">
+                <a id="total_prev" class="prev" href="javascript:;"></a>
+                <div class="text"><span id="total_year">2015</span>年<span id="total_month">12</span>月</div>
+                <a id="total_next" class="next" href="javascript:;"></a>
+            </div>
+            <div class="setting-bar">
+                <input id="total_store" type="hidden" name="idstore" value="0"/>
+                <div id="total_select" class="btn select">全部门店</div>
+            </div>
+            <table class="setting-table">
+                <thead>
+                    <tr>
+                        <th width="15%">姓名</th>
+                        <th width="15%">门店</th>
+                        <th width="15%">性别</th>
+                        <th width="15%">手机</th>
+                        <th width="40%">签到数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>金玲</td>
+                        <td>长寿路店</td>
+                        <td>女</td>
+                        <td>13532523532</td>
+                        <td>
+                            <div class="icon-wrap" data-alldays="30" data-days="10">
+                                <div class="icon"></div>
+                            </div>
+                            <span class="count">10次</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>金玲</td>
+                        <td>长寿路店</td>
+                        <td>女</td>
+                        <td>13532523532</td>
+                        <td>
+                            <div class="icon-wrap" data-alldays="30" data-days="15">
+                                <div class="icon"></div>
+                            </div>
+                            <span class="count">15次</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ul id="pstores" class="pstores">
+            <li>
+                <div class="title">A-F</div>
+            </li>
+            <li>
+                <div class="title">G-K</div>
+            </li>
+            <li>
+                <div class="title">L-P</div>
+            </li>
+            <li>
+                <div class="title">Q-U</div>
+            </li>
+            <li>
+                <div class="title">V-Z</div>
+            </li>
+        </ul>
+    </body>
+</html>

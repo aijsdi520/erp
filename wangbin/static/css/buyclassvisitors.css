@@ -1,0 +1,131 @@
+﻿ .ultd{ margin:0px auto; width:800px;text-align: center;overflow: hidden;height: 95px; }
+        .ultd ul{list-style:none;margin: 32px;}
+        .ultd li { width:50%; float:left; font-size:25px; position:relative; cursor:pointer;}
+        .ultd li .linet{ position:absolute; width:100%; height:5px; background-color:#fec047;left: 0px;bottom: -20px;}
+        .ultd li .linet em{ width:5px ; height:5px; border:8px solid transparent; border-top:8px solid #fec047;position: absolute;bottom: -15px;left: 49%;}
+        .ultd li .linsant{ width:1px; height:35px ; position :absolute; right:-1px; background-color:#c1c1c1;}
+        .ultd li .linet0 em { display:none;}
+        .ultd li .linet0{position:absolute; width:100%; height:2px; background-color:#c1c1c1;left: 0px;bottom: -17px;}
+        .dtexty { width:1200px; margin:80px auto; position: relative;}
+        .dtexty span{ position:absolute;}
+        .dtexty span .tipdnm{ height: 68px;width: 250px;margin: 0 15px; padding : 0 0 0 20px;}
+        .dtexty .tdspp1{left:300px;}
+        .dtexty .tdspp2{top: 91px;left: 300px;}
+        .dtexty .tdspp3{left: 650px; position:relative;}
+        .dtexty .tdspp4{top: 170px;right: 3px;}
+        .dtexty .tdspp4 .tpsubit{ background-color: #FFE826;border-radius: 5px;padding: 15px 80px;border: 2px solid #FFE826;color: #484848;font-size: 18px;}
+        
+        .dtexty .divtd{ position: absolute;width: 100%;height: 40px;top: 200px;background-color: rgb(241,241,241);line-height: 40px;padding: 0 40px;}
+        .dtexty .divtd .iejot{ border-bottom: 2px solid #CCC;border-left: 2px solid #CCC;width: 15px;height: 15px;transform: rotate(-45deg);position: absolute;top: 9px;left: 80px;-webkit-transform: rotate(-45deg);    /* for Chrome || Safari */ -moz-transform: rotate(-45deg);       /* for Firefox */-ms-transform: rotate(-45deg);        /* for IE */-o-transform: rotate(-45deg);         /* for Opera */
+                               
+                               }
+        .dtexty .divtd div{position:relative;}
+        .dtexty .tdidtext{position: absolute;width: 100%;height: 40px;top: 200px;line-height: 40px;padding: 0px; border-top:2px solid #ffe826;}
+        .dtexty .tdidtext ul{ padding:0px ; margin:0px; list-style:none;}
+        .dtexty .tdidtext ul li{ float:left; width:120px; background-color:rgb(241,241,241); width: 240px;text-align: center; position:relative; cursor:pointer; color:#9e9e9e}
+        .dtexty .tdidtext ul .divets .linsant{width: 1px;height: 20px;position: absolute;right: 0px;background-color: #C1C1C1;top: 10px;}
+        .dtexty .tdidtext ul .divets0{float:left; width:120px; background-color:#ffffff; width: 240px;text-align: center; position:relative; color:#484848}
+        .dtexty .tdidtext ul .divets0 .linsant{ display:none;}
+        .dtexty .tdpaiit{position: absolute;top: 278px;}
+        .dtexty  #onself2_clagte .topdfeer input, .dtexty #onself0_clagte input{height: 40px; width:362px; font-size:18px; padding: 0 0 0 20px;}
+        .dtexty #onself0_clagte .clidata{     background: transparent url("../img/icon_rili.png") no-repeat scroll 300px 5px;}
+        .dtexty #onself0_clagte span{ position:static;font-size: 20px;}
+        .dtexty #onself0_clagte .topdfeere{ margin:38px 0px }
+        .dtexty #onself0_clagte .topdfeere input{  width:1143px}
+        .xla_k{ width: 150px;height: 40px;font-size: 18px; text-align:center;}
+        .dtexty  #onself3_clagte .topdfeer span,.dtexty  #onself2_clagte .topdfeer span,.dtexty  #onself1_clagte .topdfeer span{position:static;font-size: 17px;margin: 0px 15px 0px 0px;}
+        .dtexty  #onself1_clagte .topdfeer .tdjies{ margin:0 15px 0 110px;}
+        .dtexty  #onself1_clagte .topdfeer{ margin:20px 0}
+        .dtexty  #onself1_clagte .topdfeer em{width:5px ; height:5px; border:13px solid transparent; border-top:13px solid rgb(158,158,158);position: absolute;bottom: 20px;left: 665px;}
+        .dtexty  #onself1_clagte .topdfeer .tdsdfee{bottom: 80px;}
+        .dtexty  #onself1_clagte .topdfeer .tuiyd{height: 40px;width:200px;font-size:18px ; font-weight:normal;}
+        .dtexty  #onself1_clagte .topdfeer .tuid{height: 40px;width:120px; border:0px solid #fff; font-size:18px ; font-weight:normal;}
+        img{ vertical-align:middle;  }
+        .ditdpficx{position: fixed;width: 100%;height: 100%;background-color: #000;opacity: 0.5;z-index: 1;top: 0px; }
+        .widthdificx{ width: 626px;height: 660px;background-color: #FFF;z-index: 2;position: absolute;margin: 60px 0px;top: 0px; left:34%;}
+        .widthdificx .fontsitd{ font-size:22px; padding:15px 25px;}
+        .widthdificx  .ftosizetds ,.widthdificx .ftosizetr, .widthdificx .ftosizet{  color:rgb(68,68,68); margin:15px 35px; }
+        .widthdificx .ftosizet input{ height:50px; width:350px;margin:15px 0 0 90px; }
+        .widthdificx .ftosizetr input{ height:50px; width:350px;margin:15px 0 0 75px ;}
+        .fotds{ background-color:rgb(241,241,241); margin:0px; padding:15px 25px; position:relative; }
+        .widthdificx  .ftosizetds input{height:50px; width:350px;margin:15px 0 0 11px ;}
+        .tisdusnt { text-align:right; }
+        .tisdusnt input{ width:180px; height:60px;  border-radius: 6px;background-color: #ffe826;border: px solid;margin: 10px 119px; font-size:20px}
+        .fotds em{width:5px ; height:5px; border:13px solid transparent; border-top:13px solid rgb(158,158,158);position: absolute;bottom: 10px;left: 165px;}
+        .wocainjifd,.moritsdf,  .dixptsd{ display:none;}
+        .tdjsiis{ width:1200px; height:123px;}
+        .marglin{margin: 0px 15px 0px 70px;}
+        .margtid{ margin:0px 15px 0px 0px;}
+       
+       #naid_id{ width: 100%;display: block;
+           height: 100%;}
+       .tippdstg{margin: 50px auto 70px;width: 800px;}
+       .tippdstg .inptutxtd{margin: 0px 32px;border: 1px solid rgb(255,225,170);height: 40px;}
+       .tippdstg .tdfd{width:100%; height:38px; border:0px solid #ffe826; font-size:20px; padding:0px 0 0 5px;}
+       .tippdstg .tbtuuseack{ width:100%; height:38px; border:1px solid #ffe826; background-color: #ffe826;  font-size:18px;}
+       .inptutxtd ul .dicoltj ul,.inptutxtd ul{ list-style:none; width:100%; padding:0px ; margin:0px;}
+       .inptutxtd ul li{  width:110px; float:left; line-height: 33px;}
+       .inptutxtd ul .dicoltj ul li, .inptutxtd ul .dicoltj{ background-color:rgb(241,241,241);width:160px; height:38px; text-align:center;  line-height:39px;}
+       .inptutxtd ul .dicoltj{ position:relative;}
+       .inptutxtd ul .dicoltj em{width:5px ; height:5px; border:9px solid transparent; border-top:9px solid rgb(158,158,158);position: absolute;bottom: 4px;right: 5px;}
+       .inptutxtd ul .dicoltj ul li{background-color: White;}
+       .inptutxtd ul .iundseztgt{     width: 464px;}
+        .inptutxtd ul li .wocainjifd li{ border-left:1px solid rgb(241,241,241); border-right:1px solid rgb(241,241,241);border-bottom:1px solid rgb(241,241,241);}
+        
+        .inptutxtd ul li .wocainjifd li:hover{ background-color:#ffe826; cursor:pointer; }
+        
+        
+            table
+        {
+           
+        	border-collapse: collapse;
+            border:none;
+            width:100%;
+            cursor:default;
+           
+        }
+        td,th
+        {
+            height:50px;
+            text-align:center;
+            font-size:15px;
+           
+        }
+       .heitssdf{height:30px;}
+        tr:first-child{ background-color:#ffe826; }
+        tr:first-child:hover
+        {
+              background-color:#ffe826;   
+        }
+        tr:hover
+        {
+            background-color: rgb(219,234,249);    
+            cursor:pointer;
+        }
+       
+        .cheandkts{ margin:0 5px 0 0;}
+        .patrtimg{ width:145px;}
+        .tpdwidat{ width:450px !important;}
+        .tpandtc {padding: 0 0 0 32px;}
+        #Submit1{padding: 15px 35px;background-color: #FFF;border: 2px solid #D7D7D7;border-radius: 5px;margin: 0px 120px 0px 0px;font-size: 24px;}
+        .widthdificx1{ width: 626px;height: 660px;background-color: #FFF;z-index: 2;position: absolute;margin: 60px 0px;top: 0px; left:34%;}
+        .widthdificx1 .font_sizetd { margin: 15px 0px 30px 25px;color: #484848;} .widthdificx1 .font_sizetd span{font-size: 24px;}
+        
+        
+        .tborderdets{ border:1px solid red;}
+        .divinpts .butpscg:hover, #Submit1:hover, .dtexty .tdspp4 .tpsubit:hover{ background-color:#ffc047; border:2px solid #ffc047; cursor:pointer;}
+        .topdfeer .postfonta{ overflow:auto;}
+        .topdfeer .postfonta span{color: rgb(72, 72, 72);}
+        .topdfeer .enterclass{ text-align: center;height: 55px;line-height: 55px;border: 1px dashed rgb(158, 158, 158);width: 1200px;margin: 25px 0px; cursor:pointer; color:#9e9e9e}
+        .dtexty #onself2_clagte .topdfeer .widtliantd{width: 350px !important;}
+        .dtexty #onself2_clagte .topdfeer .widkladgtr{width: 595px !important;}
+        .dtexty #onself2_clagte .topdfeer .margerpandt{width: 250px;margin: 15px 45px;border: 1px solid #dedede;}
+        .dtexty #onself2_clagte .topdfeer hr{ margin : 15px 0px 0px 0px;  color:#fff }
+        .topdefella{ height:100px; overflow:auto;}
+        .topdefella ul{ list-style:none; overflow:hidden; }
+        .topdefella ul li{ float:left; width:235px; height:50px;}
+        .divinpts{ border: 1px solid #9E9E9E;height: 62px;width: 500px;position: relative;}
+        .divinpts .inputdst{height: 100%;width: 368px;border: 0px solid;}
+        .divinpts .butpscg{border: 0px solid;background-color: rgb(255, 232, 38);font-size: 18px;height: 60px;width: 130px;position: absolute;right: 0px;}
+        .tdli a{text-decoration: none; font-size:24px;}
+        

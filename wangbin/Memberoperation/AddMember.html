@@ -49,7 +49,9 @@
         .bottm > input{
             padding: 0;}
         .bottm input:hover{ background-color:#ffc047; border:1px solid #ffc047;  }
-
+        .haddt{
+            color:rgb(96,107,96);
+        }
     </style>
 </head>
 <body>
@@ -60,43 +62,36 @@
         <a class="exit fr" href="javascript:;">退出</a>
     </div>
 </div>
-<div class="nav-wrap container-wrap">
-    <ul class="nav container clearfix">
-        <li><a href="javascript:;">会员</a></li>
-        <li><a class="focus"  href="javascript:;">教练</a></li>
-        <li><a href="javascript:;">消课</a></li>
-        <li><a href="javascript:;">设置</a></li>
-    </ul>
-</div>
+
 <div class="conter">
     <div>
-        <h1>编辑教练</h1>
+        <h1 class="haddt">添加用户</h1>
 
         <form action="">
             <div>姓名 <input type="text" /></div>
-            <div>门店 <div id="editinst_select" class="slety ui-select"></div><input type="hidden" name="idstore"/></div>
+            <div>门店 <div id="addinst_select" class="slety ui-select"></div><input type="hidden" name="idstore"/></div>
             <div>性别 <select class="slety3"><option>男</option><option>女</option></select> 手机 <input class="ntpd" type="text" ></div>
             <div class="bottm"> <input type="button" value="取消"/> <input type="button" value="提交"/></div>
         </form>
 
     </div>
 </div>
-    <ul id="pstores" class="pstores">
-        <li>
-            <div class="title">A-F</div>
-        </li>
-        <li>
-            <div class="title">G-K</div>
-        </li>
-        <li>
-            <div class="title">L-P</div>
-        </li>
-        <li>
-            <div class="title">Q-U</div>
-        </li>
-        <li>
-            <div class="title">V-Z</div>
-        </li>
-    </ul>
+<ul id="pstores" class="pstores">
+    <li>
+        <div class="title">A-F</div>
+    </li>
+    <li>
+        <div class="title">G-K</div>
+    </li>
+    <li>
+        <div class="title">L-P</div>
+    </li>
+    <li>
+        <div class="title">Q-U</div>
+    </li>
+    <li>
+        <div class="title">V-Z</div>
+    </li>
+</ul>
 </body>
 </html>

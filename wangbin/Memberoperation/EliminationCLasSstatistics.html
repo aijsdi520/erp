@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="../static/css/select.css"/>
     <script src="../static/modules/select.js"></script>
     <style>
-       .bottm{  margin: 70px auto 0px auto;
-           width: 400px;
+        .bottm{  margin: 70px auto 0px auto;
+            width: 400px;
             text-align: center;
-            }
+        }
         .bottm input{
             width: 200px;
             height: 60px;
@@ -53,22 +53,22 @@
             text-align: left;
         }
 
-       *{  margin:0; padding:0}
+        *{  margin:0; padding:0}
 
-       #hearder{     width: 800px;     margin: 60px auto;}
-       #hearder ul li { list-style:none;  height:50px; line-height:50px;  margin-left:-1px; float:left; text-align:center;}
-       #hearder ul li a{ width:100%; height:100%; display:block; text-decoration:none; color:#000; text-align:center;}
-       #hearder ul li  .dixoatpd li {  width:100%; height:20px; line-height:20px; text-align:center;border:1px solid #ccc; margin-top:-1px; cursor:pointer;}
-       .dixoatpd li:hover{ background:#985451;}
-       .date{     width: 60%;height: 25px;}
-       .dixoatpd{display:none; margin-top:1px;}
-       .tipp{ width:100px}
-       .chear{ clear:both;}
-       .potdsa{
-           position: absolute;
-           right: -200px;
-       }
-       .tpslect{    outline: none;}
+        #hearder{     width: 800px;     margin: 60px auto;}
+        #hearder ul li { list-style:none;  height:50px; line-height:50px;  margin-left:-1px; float:left; text-align:center;}
+        #hearder ul li a{ width:100%; height:100%; display:block; text-decoration:none; color:#000; text-align:center;}
+        #hearder ul li  .dixoatpd li {  width:100%; height:20px; line-height:20px; text-align:center;border:1px solid #ccc; margin-top:-1px; cursor:pointer;}
+        .dixoatpd li:hover{ background:#985451;}
+        .date{     width: 60%;height: 25px;}
+        .dixoatpd{display:none; margin-top:1px;}
+        .tipp{ width:100px}
+        .chear{ clear:both;}
+        .potdsa{
+            position: absolute;
+            right: -200px;
+        }
+        .tpslect{    outline: none;}
         .leftptd{position: absolute;
             left: -188px;}
     </style>
@@ -90,9 +90,18 @@
         <li><a href="javascript:;">设置</a></li>
     </ul>
 </div>
+<div class="mouthangy">
+    <div class="relvat">
+        <a id="preday" class="leftmouth " href="javascript:;"></a>
+        <a id="datea">2015年11月20日</a>
+        <a id="nextday" class="mouthright " href="javascript:;"></a>
+
+    </div>
+
+</div>
 <div class="bottm ">
-    <input type="button" class="checktcolor" value="消课数"/>
-    <a href="saleofclass.html"><input  type="button" value="售课数"/></a>
+    <input type="button" class="checktcolor" value="签到"/>
+    <a href="saleofclass.html"><input  type="button" value="消课"/></a>
 </div>
 <div class="mouthangy">
     <div id="hearder"  class="relvat">
@@ -137,7 +146,7 @@
             <td>女</td>
             <td>18585868985</td>
             <td class="pdwid">
-               <em class="nonde">100次</em>
+                <em class="nonde">100次</em>
             </td>
 
 
@@ -184,24 +193,24 @@
     </table>
 
 </div>
-    <ul id="pstores" class="pstores">
-        <li>
-            <div class="title">A-F</div>
-            <div class="item" data-store_id="0">全部门店</div>
-        </li>
-        <li>
-            <div class="title">G-K</div>
-        </li>
-        <li>
-            <div class="title">L-P</div>
-        </li>
-        <li>
-            <div class="title">Q-U</div>
-        </li>
-        <li>
-            <div class="title">V-Z</div>
-        </li>
-    </ul>
+<ul id="pstores" class="pstores">
+    <li>
+        <div class="title">A-F</div>
+        <div class="item" data-store_id="0">全部门店</div>
+    </li>
+    <li>
+        <div class="title">G-K</div>
+    </li>
+    <li>
+        <div class="title">L-P</div>
+    </li>
+    <li>
+        <div class="title">Q-U</div>
+    </li>
+    <li>
+        <div class="title">V-Z</div>
+    </li>
+</ul>
 </body>
 </html>
 
@@ -216,7 +225,7 @@
         return y+"-"+m+"-"+d;
     };
     $("#slelta").change(function(){
-     var  p =$(this).find("option:selected").index();
+        var  p =$(this).find("option:selected").index();
         var newdate,overdate;
 
         switch (p)
@@ -250,7 +259,7 @@
         $('#date2').val(overdate);
 
     });
-        // 日期选择
+    // 日期选择
     $('#date1').click(function () {
         WdatePicker({
             dateFmt: 'yyyy-MM-dd',
@@ -282,24 +291,24 @@
 </script>
 <script>
     $(function(){
-       $(".nonde").each(function(i){
-          var td= parseFloat( $(this).html());
-           if (td*100 >=80)
-           {
-               $(this).parent().css("position","relative");
-               $(this).css({position:"absolute",right:50});
-           }
-           var _div = "<div class='bgcolor' style='width:"+ td+"%;'></div>";
+        $(".nonde").each(function(i){
+            var td= parseFloat( $(this).html());
+            if (td*100 >=80)
+            {
+                $(this).parent().css("position","relative");
+                $(this).css({position:"absolute",right:50});
+            }
+            var _div = "<div class='bgcolor' style='width:"+ td+"%;'></div>";
 
 
 
-           $(this).parent().append(_div);
+            $(this).parent().append(_div);
 
 
 
 
 
-       });
+        });
         //colt.parent().empty();
 
 
